@@ -14,8 +14,9 @@ echo                  KREATORS AI
 echo ==================================================
 echo.
 echo   [1] Train My AI
-echo   [2] Test My AI
-echo   [3] Exit
+echo   [2] Test My Trained AI (after training)
+echo   [3] Test Untrained Brain (base model - compare!)
+echo   [4] Exit
 echo.
 set /p choice="Choose an option: "
 
@@ -33,6 +34,10 @@ if "%choice%"=="2" (
     goto menu
 )
 if "%choice%"=="3" (
+    .venv\Scripts\python.exe test_base.py
+    goto menu
+)
+if "%choice%"=="4" (
     exit
 )
 goto menu
