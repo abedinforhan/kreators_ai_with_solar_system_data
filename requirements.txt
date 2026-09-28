@@ -1,0 +1,8 @@
+transformers>=4.45
+accelerate>=0.34
+peft>=0.13
+datasets>=2.21
+huggingface-hub>=0.25
+tokenizers>=0.20
+safetensors>=0.4
+numpy<2

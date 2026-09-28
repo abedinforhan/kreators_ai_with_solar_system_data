@@ -1,0 +1,5 @@
+.venv/
+my-ai/
+training_checkpoints/
+__pycache__/
+*.pyc
