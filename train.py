@@ -122,7 +122,7 @@ model.print_trainable_parameters()
 # ------------------------------------------------------------
 training_args = TrainingArguments(
     output_dir="training_checkpoints",
-    num_train_epochs=6,               # Review each example 6 times
+    num_train_epochs=20,               # Review each example 6 times
     per_device_train_batch_size=1,    # One example at a time
     gradient_accumulation_steps=1,
     learning_rate=3e-4,               # How big each "adjustment" is when the AI is wrong
